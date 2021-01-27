@@ -1,0 +1,269 @@
+/* initialiser la page mettre toute les propriétés a zero */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: "Poppins";
+}
+section#sec-1{
+    width: 100%;
+    /* le vh est une unité qui indique la hauteur de lecran visible */
+    height: 100vh;  
+    /* La fonction linear-gradient() permet de créer une image (type <image>) représentant un dégradé de couleur linéaire. Le résultat de la fonction sera un objet CSS <gradient>. */
+    background: linear-gradient(to bottom, #ae85fe, #8666ff);
+  
+}
+
+section#sec-1 .bg{
+    background-image: url(../images/bg.png);
+    height: 100%;
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    /* centrer le contenu verticalement */
+    justify-content: center;
+    /* centrer horizontalement */
+    align-items: center;
+
+}
+section#sec-1 .bg .container{
+    text-align: center;
+    color: white;
+   
+}
+section#sec-1 .bg .container h1{
+    font-size: 5em;
+}
+section#sec-1 .bg .container p{
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+section#sec-1 .bg .container a.btn{
+    background-color: white;
+    padding: 1em 2em;
+    border-radius: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color :#8a69ff; 
+    
+}
+
+/* gestion de la responssivite a partir de 418px et en dessous */
+@media screen and (max-width: 418px){
+    section#sec-1 .bg .container h1{
+        font-size: 3em;
+    }
+    section#sec-1 .bg .container p{
+        font-size: 1.2em;
+        margin-bottom: 50px;
+    }
+}
+section#sec-2{
+    padding: 80px;
+}
+section#sec-2 > h1{
+    text-align: center;
+    font-size: 2.5em;
+    color:#181b3a;
+    font-weight: 500;
+    margin-bottom: 30px ;
+
+}
+section#sec-2 > p{
+    max-width: 800px;
+    text-align: center;
+    color: #637282; 
+    margin: 0 auto;
+    
+}
+section#sec-2 .container{
+   max-width: 1400px;
+   display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 70px auto 0 auto;
+}
+section#sec-2 .container .skill{
+   text-align: center;
+ }
+ section#sec-2 .container .skill h2{
+    color:#181b3a;
+    font-weight: 500;
+    margin: 20px 0;
+  }
+  section#sec-2 .container .skill p{
+    color:#637282;
+    max-width: 380px;
+    padding: 0 10px;
+    margin: 0 auto;
+    
+  }
+  @media Screen and (max-width:700px){
+    section#sec-2 .container {
+        flex-direction: column;
+     
+    }
+    section#sec-2 .container .skill p{
+        max-width: 95%;
+        
+      }
+      section#sec-2 .container .skill{
+        margin: 25px 0;
+      }
+      section#sec-2 > h1 {
+        font-size: 2em;
+        
+    }
+  }
+  section#sect-3{
+      background-color:rgb(246,246,246) ;
+      padding: 80px 0;
+  }
+  section#sect-3 .container{
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 0 10px;
+  }
+
+  section#sect-3 .container .left{
+      max-width: 500px;
+  }
+  section#sect-3 .container .left img{
+    width: 500px;
+}
+section#sect-3 .container .right{
+    max-width: 50%;
+}
+section#sect-3 .container .right h1{
+    font-size: 2.5em;
+    color: #181b3a;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+section#sect-3 .container .right p{
+    margin-bottom: 50px;
+    color: #637282;
+}
+section#sect-3 .container .right a.cta-btn{
+    background: linear-gradient(to bottom, #ae85fe, #8666ff);
+    padding: 1em 2em;
+    border-radius: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color :#ffffff; 
+    
+}
+
+@media screen and (max-width:1130px ){
+    
+    section#sect-3 .container .left img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:731px ){
+    section#sect-3 .container{
+        flex-direction: column;
+    }
+    section#sect-3 .container .right {
+        max-width: 91%;
+    }
+    section#sect-3 .container .right h1 {
+        font-size: 1.5em;
+    }
+    section#sect-3 .container .left  {
+        max-width: 350px;
+        margin-bottom: 25px;
+    }
+    
+}
+
+footer{
+    background-color: #2e303c;
+    padding: 80px 10px;
+}
+
+footer .container{
+    max-width: 1400px;
+    margin: 0 auto;
+    
+}
+
+footer .container .title h1{
+    font-weight: 500;
+    color: white;
+}
+footer .container .text .copyright {
+  
+    margin-right: 100px;
+    
+}
+footer .container .text p {
+    color : white;
+    max-width: 700px;
+   
+    
+}
+footer .container .text .div-menu{
+    display: flex;
+}
+footer .container .text {
+    margin-top: 30px;
+    display: flex;
+}
+footer .container .text .menu {
+    margin-right: 50px;
+}
+footer .container .text .menu > h5{
+    color:white;
+    font-size:1.5em;
+    font-weight: 500;
+}
+footer .container .text .menu li {
+    color: rgb(207,207,207);
+    margin-left: 5px;
+    margin-top: 10px;;
+}
+@media screen and (max-width: 1100px){
+    footer .container .text .copyright {
+  
+        margin-right: 50px;
+        
+    }
+}
+@media screen and (max-width:950px ){
+    footer .container .text {
+        flex-direction: column;
+    }
+    footer .container .text .copyright {
+  
+        margin-right: 0;
+        
+    }
+    footer .container .text p {
+        max-width: 95%; 
+    }
+    footer .container .text .div-menu{
+        display: flex;
+        margin-top:30px ;
+    }
+}
+@media screen and (max-width:400px ){
+    footer .container .text .div-menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .container .text .menu {
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 0;
+    }
+}
