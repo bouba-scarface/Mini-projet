@@ -4,16 +4,22 @@
         <title>Title</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- JS  -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="assets/Js/couleur.js"></script>
+        <!-- CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       
     </head>
     <body>
          <section id="sec-1">
             <div class="bg">
-               <div class="container">
+               <div class="container" id="text-sec-1">
                     <h1>Bienvenue !</h1>
                     <p>sur mon site d'initiation en html/css</p>
-                    <a href="#" class="btn">En savoir plus</a>
+                    <a href="#" class="btn" onclick="colorChange()">Change the color</a>
                </div>
             </div>
         </section> 
@@ -22,17 +28,17 @@
             <h1>Ce que je vais apprendre dans cette formation... </h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus ex ac aliquet rhoncus.Duis et mauris efficitur, lacinia erat eu, lobortis orci. Phasellus porta erat ac tellus feugiat, non tincidunt orci finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
             <div class="container">
-                <div class="skill">
+                <div class="skill" data-aos="fade-right">
                     <img src="assets/images/html.svg" alt="icon html" height="65px">
                     <h2>L'HTML</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus ex ac aliquet rhoncus.</p>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="zoom-in">
                     <img src="assets/images/css.svg" alt="icon css" height="65px">
                     <h2>Le CSS</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus ex ac aliquet rhoncus.</p>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="fade-left">>
                     <img src="assets/images/responsive.svg" alt="icon responsive" height="65px">
                     <h2>Le Responsive</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus ex ac aliquet rhoncus.</p>
@@ -45,7 +51,7 @@
                 <div class="left">
                     <img src="assets/images/isometric-pc.png" alt="mon pc">
                 </div>
-                <div class="right">
+                <div class="right" id="text-sec-3">
                     <h1>Mon premier site web</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam maximus ex ac aliquet rhoncus. Duis et mauris efficitur, lacinia erat eu, lobortis orci. Phasellus porta erat ac tellus feugiat, non tincidunt orci finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse hendrerit volutpat nunc, sit amet tempor dolor molestie sit amet. Praesent eu vehicula quam. Vivamus ac lacus et arcu pretium sollicitudin. Morbi bibendum massa eget nulla aliquet rhoncus. Proin luctus urna ullamcorper aliquet porta. Praesent leo nibh, vehicula non dignissim at, dignissim a ligula. Etiam eget leo fringilla, faucibus eros eget, placerat risus. Nulla gravida porttitor metus, in facilisis lacus gravida eu. Nam ullamcorper massa a semper molestie.
@@ -107,6 +113,8 @@
                 </div>
                 
         </footer>
-
+        <script>
+            AOS.init();
+          </script>
     </body>
 </html>
